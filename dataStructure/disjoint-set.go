@@ -11,7 +11,7 @@ type UF struct {
 	Size   []int // 保存父节点的子节点个数
 }
 
-func NewUF(n int) *UF {
+func NewUF(n int) UFI {
 	u := &UF{
 		Parent: make([]int, n),
 		Size:   make([]int, n),

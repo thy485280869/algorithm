@@ -2,6 +2,9 @@ package dataStructure
 
 import "testing"
 
-func TestUF(t *testing.T) {
-
+func TestNewUF(t *testing.T) {
+	u := NewUF(3)
+	if _, ok := u.(*UF); !ok {
+		t.Error()
+	}
 }
